@@ -1,0 +1,16 @@
+.prue{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.x{
+    font-size: 20px;
+}
+
+#categorias{
+    padding: 1rem;
+}

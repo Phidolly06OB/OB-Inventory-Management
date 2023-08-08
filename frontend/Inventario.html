@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventario</title>
+  
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="funcionalidades/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="funcionalidades/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="funcionalidades/adminlte/css/x/adminlte2.css">
+  
+
+
+  <link rel="stylesheet" href="funcionalidades/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="funcionalidades/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="funcionalidades/datatables-buttons/css/buttons.bootstrap4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <div
+    class="navPropio">
+      
+        <div class="caja2">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" data-widget="pushmenu" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg></a>
+            </li>
+          </ul>
+        </div>
+
+      <div class="caja1">
+        <h1>Inventario</h1>
+      </div>
+
+    </div>
+
+    
+    
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #1F1D2B;">
+    <!-- Brand Logo -->
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex" style="border-bottom: 3px solid white;">
+        <div class="image">
+          <img src="../frontend/005574f064d1e54d4668a4d664e477c6.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Admin</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          
+          <li class="nav-item">
+            <a href="./home.html" class="nav-link" style="    
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            gap: 15px;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                    <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                    <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                  </svg>
+              <p>
+                Home
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="./Inventario.html" class="nav-link active" style="
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            gap: 15px;
+            color: black;
+            background-color: #EA7C69;
+            ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-forklift" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M14 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M7 17l5 0" />
+                <path d="M3 17v-6h13v6" />
+                <path d="M5 11v-4h4" />
+                <path d="M9 11v-6h4l3 6" />
+                <path d="M22 15h-3v-10" />
+                <path d="M16 13l3 0" />
+              </svg>
+              <p>
+                Inventario
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="./categorias.html" class="nav-link" style="
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            gap: 15px;
+            ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-category" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M4 4h6v6h-6z" />
+                  <path d="M14 4h6v6h-6z" />
+                  <path d="M4 14h6v6h-6z" />
+                  <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                </svg>
+              <p>
+                Categorias
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="empleados.html" class="nav-link"  style="
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            gap: 15px;
+            ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                  </svg>
+              <p>
+                Empleados
+              </p>
+            </a>
+          </li>
+          
+            </ul>
+          </li>
+          
+          
+              
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="background-color: #252836;">
+    <!-- Content Header (Page header) -->
+    
+
+
+    <div class="tablasInfo">
+      <div class=" mistablas">
+
+        <div class="boton">
+          <button type="button" class="btn " data-toggle="modal" data-target="#modal1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-package" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" />
+              <path d="M12 12l8 -4.5" />
+              <path d="M12 12l0 9" />
+              <path d="M12 12l-8 -4.5" />
+              <path d="M16 5.25l-8 4.5" />
+            </svg>
+            Agregar Producto
+          </button>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body colortabla">
+          <table id="example1" class="table table-striped">
+            <thead class="table-dark">
+            <tr>
+              <th class="col-md-1"><div class="cardMio">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-id-badge-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M7 12h3v4h-3z" />
+                  <path d="M10 6h-6a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h16a1 1 0 0 0 1 -1v-12a1 1 0 0 0 -1 -1h-6" />
+                  <path d="M10 3m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+                  <path d="M14 16h2" />
+                  <path d="M14 12h4" />
+                </svg>
+                NOMBRE
+              </div></th>
+              <th class="col-md-2"><div class="cardMio">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-id" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+                  <path d="M9 10m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                  <path d="M15 8l2 0" />
+                  <path d="M15 12l2 0" />
+                  <path d="M7 16l10 0" />
+                </svg>
+                CATEGORIA ID
+              </div></th>
+              <th class="col-md-1"><div class="cardMio">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box-seam" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M12 3l8 4.5v9l-8 4.5l-8 -4.5v-9l8 -4.5" />
+                  <path d="M12 12l8 -4.5" />
+                  <path d="M8.2 9.8l7.6 -4.6" />
+                  <path d="M12 12v9" />
+                  <path d="M12 12l-8 -4.5" />
+                </svg>
+                CANTIDAD
+              </div></th>
+              <th class="col-md-1"><div class="cardMio">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M8 9h8" />
+                  <path d="M8 13h6" />
+                  <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                </svg>
+                DESCRIPCION
+              </div></th>
+              <th class="col-md-1"><div class="cardMio">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M4 6l16 0" />
+                  <path d="M4 12l16 0" />
+                  <path d="M4 18l16 0" />
+                </svg>
+                OPTIONS
+              </div></th>
+              
+              
+            </tr>
+            </thead>
+            <tbody class="table-light det">
+            
+            </tbody>
+  
+          </table>
+        </div>
+        <!-- /.card-body -->
+      </div>
+    </div>
+    <!-- Main content -->
+    
+    
+  </div>
+
+
+<!-- modales -->
+
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agregar Producto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="formulario">
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
+
+          <div class="d-flex flex-column">
+            <label for="cate" class="col-form-label">Categorias:</label>
+            <select id="categorias" class="form-select p-2 rounded" aria-label="Default select example">
+              <option selected>Categorias</option>  
+              
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Cantidad:</label>
+            <input type="number" class="form-control" id="cantidad">
+          </div>
+
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Descripcion:</label>
+            <textarea class="form-control" id="descripcion"></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Update Datos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <input style="display: none;" type="text" id="updId">
+          <div class="form-group">
+            <label for="nombreUpd" class="col-form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombreUpd">
+          </div>
+
+          <div class="d-flex flex-column">
+            <label for="cate" class="col-form-label">Categorias:</label>
+            <select id="categoriasUpd" class="form-select p-2 rounded" aria-label="Default select example">
+              <option selected>Categorias</option>  
+              
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="nombreUpd" class="col-form-label">Cantidad:</label>
+            <input type="number" class="form-control" id="cantidadUpd">
+          </div>
+
+
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="descripcionUpd"></textarea>
+          </div>
+
+
+          <button type="submit" id="update" class="btn btn-primary">Actualizar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer" style="color: black;">
+    <strong>OB Inventory Management</strong> 
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="funcionalidades/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="funcionalidades/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="funcionalidades/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="funcionalidades/adminlte/js/adminlte.min.js"></script>
+
+
+<script src="funcionalidades/datatables/jquery.dataTables.min.js"></script>
+<script src="funcionalidades/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="funcionalidades/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="funcionalidades/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="funcionalidades/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="funcionalidades/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="funcionalidades/jszip/jszip.min.js"></script>
+<script src="funcionalidades/pdfmake/pdfmake.min.js"></script>
+<script src="funcionalidades/pdfmake/vfs_fonts.js"></script>
+<script src="funcionalidades/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="funcionalidades/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="funcionalidades/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+<script src="conexiones API/inventario/new.js" type="module"></script>
+<script src="conexiones API/inventario/inventario.js" type="module"></script>
+
+
+<!-- AdminLTE App -->
+
+
+</script> 
+</body>
+</html>
